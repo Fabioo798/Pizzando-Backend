@@ -1,4 +1,4 @@
-import CartItem from '../../order.items/domain/order.items.model';
+import Pizza from '../../pizzas/domain/pizza.model';
 
 enum OrderStatus {
   PENDING = 'PENDING',
@@ -7,10 +7,10 @@ enum OrderStatus {
 }
 
 export default class Order {
-  // eslint-disable-next-line no-useless-constructor
+  // eslint-disable-next-line no-useless-constructor, max-params
   constructor(
     public id: string,
-    public items: CartItem[],
+    public items: Pizza[],
     public total: number,
     public status: OrderStatus,
     public createDate: Date

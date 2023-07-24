@@ -1,7 +1,7 @@
 import Order from '../../orders/domain/order.model';
 
 export default class User {
-  // eslint-disable-next-line no-useless-constructor
+  // eslint-disable-next-line no-useless-constructor, max-params
   constructor(
     public id: string,
     public name: string,
