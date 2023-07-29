@@ -7,6 +7,8 @@ export default class User {
     public name: string,
     public email: string,
     public password: string,
+    public address: string,
+    public phoneNumber: number,
     public orderHistory: Order[], // Array of past orders
     public currentOrder?: Order
   ) {}
